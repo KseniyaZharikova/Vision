@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultViewController" customModule="visionApp" customModuleProvider="target">
+            <connections>
+                <outlet property="documentErrorTitle" destination="rCB-pg-uCu" id="gzy-d7-3FG"/>
+                <outlet property="documentStatusTitle" destination="f2x-dO-Pxd" id="sWE-De-HOy"/>
+                <outlet property="faceErrorTitle" destination="6i5-z3-c3F" id="2P6-aJ-pRx"/>
+                <outlet property="faceStatusTitle" destination="piT-0w-0UF" id="wug-Ef-xlP"/>
+                <outlet property="view" destination="1O4-G2-Y7c" id="4uf-vK-aQf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1O4-G2-Y7c">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Face:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzQ-tn-zIX">
+                    <rect key="frame" x="24" y="299.5" width="44.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhx-dC-N5b">
+                    <rect key="frame" x="24" y="394" width="91" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2x-dO-Pxd">
+                    <rect key="frame" x="335.5" y="394" width="54.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i5-z3-c3F">
+                    <rect key="frame" x="24" y="328.5" width="358" height="33.5"/>
+                    <string key="text">No faces found in the photo. Please make
+sure that your face is clearly visible.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCB-pg-uCu">
+                    <rect key="frame" x="24" y="423" width="366" height="50.5"/>
+                    <string key="text">No documents found in the photo. Please
+make sure that your ID card is clearly
+visible.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piT-0w-0UF">
+                    <rect key="frame" x="335.5" y="299.5" width="54.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkm-mQ-8dP">
+                    <rect key="frame" x="32" y="774" width="350" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="eJD-fk-TNt"/>
+                    </constraints>
+                    <buttonConfiguration key="configuration" style="filled" title="Try again">
+                        <color key="baseBackgroundColor" red="0.0" green="0.40086580849999998" blue="0.61647790670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="tryAgainAction:" destination="-1" eventType="touchUpInside" id="WET-Kr-8R9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="xap-9r-j2f"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qkm-mQ-8dP" firstAttribute="leading" secondItem="xap-9r-j2f" secondAttribute="leading" constant="32" id="0la-ZL-klN"/>
+                <constraint firstItem="xap-9r-j2f" firstAttribute="trailing" secondItem="6i5-z3-c3F" secondAttribute="trailing" constant="32" id="8An-PO-cWb"/>
+                <constraint firstItem="Lhx-dC-N5b" firstAttribute="top" secondItem="6i5-z3-c3F" secondAttribute="bottom" constant="32" id="AjG-75-31k"/>
+                <constraint firstItem="rCB-pg-uCu" firstAttribute="centerY" secondItem="1O4-G2-Y7c" secondAttribute="centerY" id="FaM-kI-1XT"/>
+                <constraint firstItem="xap-9r-j2f" firstAttribute="trailing" secondItem="piT-0w-0UF" secondAttribute="trailing" constant="24" id="I1Q-hT-miG"/>
+                <constraint firstItem="xap-9r-j2f" firstAttribute="trailing" secondItem="f2x-dO-Pxd" secondAttribute="trailing" constant="24" id="Kxh-Re-haK"/>
+                <constraint firstItem="6i5-z3-c3F" firstAttribute="top" secondItem="piT-0w-0UF" secondAttribute="bottom" constant="8" id="Las-uF-HnN"/>
+                <constraint firstItem="rCB-pg-uCu" firstAttribute="leading" secondItem="xap-9r-j2f" secondAttribute="leading" constant="24" id="O13-Sb-5tf"/>
+                <constraint firstItem="6i5-z3-c3F" firstAttribute="leading" secondItem="xap-9r-j2f" secondAttribute="leading" constant="24" id="Q5f-6U-oNF"/>
+                <constraint firstItem="xap-9r-j2f" firstAttribute="bottom" secondItem="qkm-mQ-8dP" secondAttribute="bottom" constant="32" id="Rdy-LO-loC"/>
+                <constraint firstItem="rCB-pg-uCu" firstAttribute="top" secondItem="f2x-dO-Pxd" secondAttribute="bottom" constant="8" id="TPd-bj-iiO"/>
+                <constraint firstItem="6i5-z3-c3F" firstAttribute="top" secondItem="hzQ-tn-zIX" secondAttribute="bottom" constant="8" id="TfF-R2-sLb"/>
+                <constraint firstItem="Lhx-dC-N5b" firstAttribute="leading" secondItem="xap-9r-j2f" secondAttribute="leading" constant="24" id="VrM-S8-W8z"/>
+                <constraint firstItem="xap-9r-j2f" firstAttribute="trailing" secondItem="qkm-mQ-8dP" secondAttribute="trailing" constant="32" id="bRX-zv-chp"/>
+                <constraint firstItem="hzQ-tn-zIX" firstAttribute="leading" secondItem="xap-9r-j2f" secondAttribute="leading" constant="24" id="dzk-E1-i8X"/>
+                <constraint firstItem="rCB-pg-uCu" firstAttribute="top" secondItem="Lhx-dC-N5b" secondAttribute="bottom" constant="8" id="q2n-cb-leN"/>
+                <constraint firstItem="xap-9r-j2f" firstAttribute="trailing" secondItem="rCB-pg-uCu" secondAttribute="trailing" constant="24" id="qgc-Ir-o2Q"/>
+            </constraints>
+            <point key="canvasLocation" x="410" y="-192"/>
+        </view>
+    </objects>
+</document>

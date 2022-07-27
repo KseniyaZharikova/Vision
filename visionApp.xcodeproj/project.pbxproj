@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1869D9B3289116D300897414 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9B2289116D300897414 /* Detector.swift */; };
+		1869D9B528912A1200897414 /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9B428912A1200897414 /* ResultsModel.swift */; };
+		1869D9BE28912E0C00897414 /* PassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9BD28912E0C00897414 /* PassportViewController.swift */; };
+		1869D9C228912EBF00897414 /* PassportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1869D9C128912EBF00897414 /* PassportViewController.xib */; };
+		1869D9C4289131B200897414 /* PassportPresnter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9C3289131B200897414 /* PassportPresnter.swift */; };
+		1869D9C728913A1D00897414 /* Ext+ UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9C628913A1D00897414 /* Ext+ UIViewController.swift */; };
+		1869D9CB28913B6E00897414 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9CA28913B6E00897414 /* ResultViewController.swift */; };
+		1869D9CD28913B7B00897414 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1869D9CC28913B7B00897414 /* ResultViewController.xib */; };
+		1869D9CF28913BBF00897414 /* ResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9CE28913BBF00897414 /* ResultPresenter.swift */; };
 		18C72998288EEC4B0018F98E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C72997288EEC4B0018F98E /* AppDelegate.swift */; };
 		18C7299A288EEC4B0018F98E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C72999288EEC4B0018F98E /* SceneDelegate.swift */; };
-		18C7299C288EEC4B0018F98E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7299B288EEC4B0018F98E /* ViewController.swift */; };
+		18C7299C288EEC4B0018F98E /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7299B288EEC4B0018F98E /* SelfieViewController.swift */; };
 		18C7299F288EEC4B0018F98E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C7299D288EEC4B0018F98E /* Main.storyboard */; };
 		18C729A1288EEC4D0018F98E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C729A0288EEC4D0018F98E /* Assets.xcassets */; };
 		18C729A4288EEC4D0018F98E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C729A2288EEC4D0018F98E /* LaunchScreen.storyboard */; };
 		18C729AF288EEC4D0018F98E /* visionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729AE288EEC4D0018F98E /* visionAppTests.swift */; };
 		18C729B9288EEC4D0018F98E /* visionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729B8288EEC4D0018F98E /* visionAppUITests.swift */; };
 		18C729BB288EEC4D0018F98E /* visionAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729BA288EEC4D0018F98E /* visionAppUITestsLaunchTests.swift */; };
+		18C729C8288EF8340018F98E /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729C7288EF8340018F98E /* ModuleBuilder.swift */; };
+		18C729CA288EF86C0018F98E /* Cordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729C9288EF86C0018F98E /* Cordinator.swift */; };
+		18C729D3288EF9B20018F98E /* SelfiePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729D2288EF9B20018F98E /* SelfiePresenter.swift */; };
+		18C729D7288F02160018F98E /* SelfieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C729D6288F02160018F98E /* SelfieViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +49,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1869D9B2289116D300897414 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
+		1869D9B428912A1200897414 /* ResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsModel.swift; sourceTree = "<group>"; };
+		1869D9BD28912E0C00897414 /* PassportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportViewController.swift; sourceTree = "<group>"; };
+		1869D9C128912EBF00897414 /* PassportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassportViewController.xib; sourceTree = "<group>"; };
+		1869D9C3289131B200897414 /* PassportPresnter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportPresnter.swift; sourceTree = "<group>"; };
+		1869D9C628913A1D00897414 /* Ext+ UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+ UIViewController.swift"; sourceTree = "<group>"; };
+		1869D9CA28913B6E00897414 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1869D9CC28913B7B00897414 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		1869D9CE28913BBF00897414 /* ResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresenter.swift; sourceTree = "<group>"; };
 		18C72994288EEC4A0018F98E /* visionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C72997288EEC4B0018F98E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C72999288EEC4B0018F98E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18C7299B288EEC4B0018F98E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18C7299B288EEC4B0018F98E /* SelfieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieViewController.swift; sourceTree = "<group>"; };
 		18C7299E288EEC4B0018F98E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18C729A0288EEC4D0018F98E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C729A3288EEC4D0018F98E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +71,10 @@
 		18C729B4288EEC4D0018F98E /* visionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = visionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C729B8288EEC4D0018F98E /* visionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionAppUITests.swift; sourceTree = "<group>"; };
 		18C729BA288EEC4D0018F98E /* visionAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18C729C7288EF8340018F98E /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		18C729C9288EF86C0018F98E /* Cordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinator.swift; sourceTree = "<group>"; };
+		18C729D2288EF9B20018F98E /* SelfiePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiePresenter.swift; sourceTree = "<group>"; };
+		18C729D6288F02160018F98E /* SelfieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfieViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +102,116 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1869D9AE2891151D00897414 /* Cordinator */ = {
+			isa = PBXGroup;
+			children = (
+				18C729C9288EF86C0018F98E /* Cordinator.swift */,
+			);
+			path = Cordinator;
+			sourceTree = "<group>";
+		};
+		1869D9AF2891153700897414 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18C72999288EEC4B0018F98E /* SceneDelegate.swift */,
+				18C72997288EEC4B0018F98E /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1869D9B02891154800897414 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				18C729C7288EF8340018F98E /* ModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		1869D9B1289116C400897414 /* Detector */ = {
+			isa = PBXGroup;
+			children = (
+				1869D9B2289116D300897414 /* Detector.swift */,
+			);
+			path = Detector;
+			sourceTree = "<group>";
+		};
+		1869D9B628912D4F00897414 /* Passport */ = {
+			isa = PBXGroup;
+			children = (
+				1869D9BB28912DC800897414 /* Model */,
+				1869D9BA28912DC100897414 /* View */,
+				1869D9B928912DAC00897414 /* Presenter */,
+			);
+			path = Passport;
+			sourceTree = "<group>";
+		};
+		1869D9B728912D7500897414 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				1869D9B828912D8000897414 /* Model */,
+				1869D9C928913B2D00897414 /* View */,
+				1869D9C828913B2600897414 /* Presenter */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		1869D9B828912D8000897414 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1869D9B428912A1200897414 /* ResultsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1869D9B928912DAC00897414 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1869D9C3289131B200897414 /* PassportPresnter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1869D9BA28912DC100897414 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1869D9BD28912E0C00897414 /* PassportViewController.swift */,
+				1869D9C128912EBF00897414 /* PassportViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1869D9BB28912DC800897414 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1869D9C528913A0600897414 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1869D9C628913A1D00897414 /* Ext+ UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1869D9C828913B2600897414 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1869D9CE28913BBF00897414 /* ResultPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1869D9C928913B2D00897414 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1869D9CA28913B6E00897414 /* ResultViewController.swift */,
+				1869D9CC28913B7B00897414 /* ResultViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		18C7298B288EEC4A0018F98E = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +235,12 @@
 		18C72996288EEC4A0018F98E /* visionApp */ = {
 			isa = PBXGroup;
 			children = (
-				18C72997288EEC4B0018F98E /* AppDelegate.swift */,
-				18C72999288EEC4B0018F98E /* SceneDelegate.swift */,
-				18C7299B288EEC4B0018F98E /* ViewController.swift */,
+				1869D9AF2891153700897414 /* App */,
+				1869D9B02891154800897414 /* Builder */,
+				1869D9AE2891151D00897414 /* Cordinator */,
+				1869D9B1289116C400897414 /* Detector */,
+				18C729CC288EF8EA0018F98E /* Modules */,
+				1869D9C528913A0600897414 /* Extension */,
 				18C7299D288EEC4B0018F98E /* Main.storyboard */,
 				18C729A0288EEC4D0018F98E /* Assets.xcassets */,
 				18C729A2288EEC4D0018F98E /* LaunchScreen.storyboard */,
@@ -125,6 +264,50 @@
 				18C729BA288EEC4D0018F98E /* visionAppUITestsLaunchTests.swift */,
 			);
 			path = visionAppUITests;
+			sourceTree = "<group>";
+		};
+		18C729CB288EF8CE0018F98E /* Selfie */ = {
+			isa = PBXGroup;
+			children = (
+				18C729CE288EF9070018F98E /* Model */,
+				18C729CD288EF8FB0018F98E /* View */,
+				18C729CF288EF9110018F98E /* Presenter */,
+			);
+			path = Selfie;
+			sourceTree = "<group>";
+		};
+		18C729CC288EF8EA0018F98E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				18C729CB288EF8CE0018F98E /* Selfie */,
+				1869D9B628912D4F00897414 /* Passport */,
+				1869D9B728912D7500897414 /* Result */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		18C729CD288EF8FB0018F98E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18C7299B288EEC4B0018F98E /* SelfieViewController.swift */,
+				18C729D6288F02160018F98E /* SelfieViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18C729CE288EF9070018F98E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C729CF288EF9110018F98E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				18C729D2288EF9B20018F98E /* SelfiePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +415,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C729A4288EEC4D0018F98E /* LaunchScreen.storyboard in Resources */,
+				1869D9CD28913B7B00897414 /* ResultViewController.xib in Resources */,
+				1869D9C228912EBF00897414 /* PassportViewController.xib in Resources */,
+				18C729D7288F02160018F98E /* SelfieViewController.xib in Resources */,
 				18C729A1288EEC4D0018F98E /* Assets.xcassets in Resources */,
 				18C7299F288EEC4B0018F98E /* Main.storyboard in Resources */,
 			);
@@ -258,9 +444,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C7299C288EEC4B0018F98E /* ViewController.swift in Sources */,
+				1869D9CF28913BBF00897414 /* ResultPresenter.swift in Sources */,
+				1869D9BE28912E0C00897414 /* PassportViewController.swift in Sources */,
+				1869D9B528912A1200897414 /* ResultsModel.swift in Sources */,
+				18C7299C288EEC4B0018F98E /* SelfieViewController.swift in Sources */,
+				1869D9C728913A1D00897414 /* Ext+ UIViewController.swift in Sources */,
+				1869D9B3289116D300897414 /* Detector.swift in Sources */,
 				18C72998288EEC4B0018F98E /* AppDelegate.swift in Sources */,
+				18C729D3288EF9B20018F98E /* SelfiePresenter.swift in Sources */,
+				1869D9C4289131B200897414 /* PassportPresnter.swift in Sources */,
+				18C729CA288EF86C0018F98E /* Cordinator.swift in Sources */,
 				18C7299A288EEC4B0018F98E /* SceneDelegate.swift in Sources */,
+				18C729C8288EF8340018F98E /* ModuleBuilder.swift in Sources */,
+				1869D9CB28913B6E00897414 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,8 +633,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BV8YVFU6QU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = visionApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Vision;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera use for detect your Face or Document";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -453,7 +652,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -464,8 +663,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BV8YVFU6QU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = visionApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Vision;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera use for detect your Face or Document";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -480,7 +682,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
