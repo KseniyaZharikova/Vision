@@ -11,25 +11,29 @@ import UIKit
 protocol PassportViewProtocol: AnyObject {}
 
 protocol PassportPresenterProtocol: AnyObject {
-    init(view: PassportViewProtocol,detector: Detector, cordinator: CordinatorProtocol)
+    init(view: PassportViewProtocol, detector: Detector, coordinator: CoordinatorProtocol)
     func takedPhotoAction(image: UIImage?)
 }
 
 final class PassportPresenter: PassportPresenterProtocol {
-   
     weak var view: PassportViewProtocol?
-    var cordinator: CordinatorProtocol?
+    var coordinator: CoordinatorProtocol?
     let detector: Detector!
     
-    required init(view: PassportViewProtocol, detector: Detector,cordinator: CordinatorProtocol) {
+    required init(view: PassportViewProtocol, detector: Detector, coordinator: CoordinatorProtocol) {
         self.view = view
-        self.cordinator = cordinator
+        self.coordinator = coordinator
         self.detector = detector
     }
     
     func takedPhotoAction(image: UIImage?) {
         guard let image = image else { return }
-        cordinator?.results?.text = detector.detectText(image: image)
-        cordinator?.openResultViewController()
+        
+        detector.detectText(image: image, { [weak self] result in
+            guard let `self` = self else { return }
+            self.coordinator?.results?.textRecognitionResult = result
+        })
+        
+        coordinator?.openResultViewController()
     }
 }

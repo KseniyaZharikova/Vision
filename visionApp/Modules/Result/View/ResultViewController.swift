@@ -29,13 +29,36 @@ final class ResultViewController: UIViewController {
     }
     
     func setUpResult() {
-        faceStatusTitle.text = presenter.model?.faceStatus.title
-        faceStatusTitle.textColor = presenter.model?.faceStatus.color
-        faceErrorTitle.text = presenter.model?.faceStatus.error
+        guard let model = presenter.model else { return }
         
-        documentStatusTitle.text = presenter.model?.textStatus.title
-        documentStatusTitle.textColor = presenter.model?.textStatus.color
-        documentErrorTitle.text = presenter.model?.textStatus.error
+        switch model.faceRecognitionResult {
+        case .success(_):
+            faceStatusTitle.text = "Success"
+            faceStatusTitle.textColor = .green
+            faceErrorTitle.isHidden = true
+        case .failure(let error):
+            faceStatusTitle.text = "Failure"
+            faceStatusTitle.textColor = .red
+            faceErrorTitle.text = error.message
+            faceErrorTitle.isHidden = false
+        case .none:
+            return
+        }
+        
+        switch model.textRecognitionResult {
+        case .success(_):
+            documentStatusTitle.text = "Success"
+            documentStatusTitle.textColor = .green
+            documentErrorTitle.isHidden = true
+        case .failure(let error):
+            documentStatusTitle.text = "Failure"
+            documentStatusTitle.textColor = .red
+            documentErrorTitle.text = error.message
+            documentErrorTitle.isHidden = false
+        case .none:
+            return
+        }
+        
     }
     
     @IBAction func tryAgainAction(_ sender: Any) {

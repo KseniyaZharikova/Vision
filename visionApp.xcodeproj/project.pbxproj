@@ -23,8 +23,6 @@
 		18C729A1288EEC4D0018F98E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C729A0288EEC4D0018F98E /* Assets.xcassets */; };
 		18C729A4288EEC4D0018F98E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C729A2288EEC4D0018F98E /* LaunchScreen.storyboard */; };
 		18C729AF288EEC4D0018F98E /* visionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729AE288EEC4D0018F98E /* visionAppTests.swift */; };
-		18C729B9288EEC4D0018F98E /* visionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729B8288EEC4D0018F98E /* visionAppUITests.swift */; };
-		18C729BB288EEC4D0018F98E /* visionAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729BA288EEC4D0018F98E /* visionAppUITestsLaunchTests.swift */; };
 		18C729C8288EF8340018F98E /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729C7288EF8340018F98E /* ModuleBuilder.swift */; };
 		18C729CA288EF86C0018F98E /* Cordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729C9288EF86C0018F98E /* Cordinator.swift */; };
 		18C729D3288EF9B20018F98E /* SelfiePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729D2288EF9B20018F98E /* SelfiePresenter.swift */; };
@@ -69,8 +67,6 @@
 		18C729AA288EEC4D0018F98E /* visionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = visionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C729AE288EEC4D0018F98E /* visionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionAppTests.swift; sourceTree = "<group>"; };
 		18C729B4288EEC4D0018F98E /* visionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = visionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18C729B8288EEC4D0018F98E /* visionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionAppUITests.swift; sourceTree = "<group>"; };
-		18C729BA288EEC4D0018F98E /* visionAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18C729C7288EF8340018F98E /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		18C729C9288EF86C0018F98E /* Cordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinator.swift; sourceTree = "<group>"; };
 		18C729D2288EF9B20018F98E /* SelfiePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiePresenter.swift; sourceTree = "<group>"; };
@@ -138,7 +134,6 @@
 		1869D9B628912D4F00897414 /* Passport */ = {
 			isa = PBXGroup;
 			children = (
-				1869D9BB28912DC800897414 /* Model */,
 				1869D9BA28912DC100897414 /* View */,
 				1869D9B928912DAC00897414 /* Presenter */,
 			);
@@ -180,13 +175,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		1869D9BB28912DC800897414 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		1869D9C528913A0600897414 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,7 +205,6 @@
 			children = (
 				18C72996288EEC4A0018F98E /* visionApp */,
 				18C729AD288EEC4D0018F98E /* visionAppTests */,
-				18C729B7288EEC4D0018F98E /* visionAppUITests */,
 				18C72995288EEC4A0018F98E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -257,19 +244,9 @@
 			path = visionAppTests;
 			sourceTree = "<group>";
 		};
-		18C729B7288EEC4D0018F98E /* visionAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				18C729B8288EEC4D0018F98E /* visionAppUITests.swift */,
-				18C729BA288EEC4D0018F98E /* visionAppUITestsLaunchTests.swift */,
-			);
-			path = visionAppUITests;
-			sourceTree = "<group>";
-		};
 		18C729CB288EF8CE0018F98E /* Selfie */ = {
 			isa = PBXGroup;
 			children = (
-				18C729CE288EF9070018F98E /* Model */,
 				18C729CD288EF8FB0018F98E /* View */,
 				18C729CF288EF9110018F98E /* Presenter */,
 			);
@@ -293,13 +270,6 @@
 				18C729D6288F02160018F98E /* SelfieViewController.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		18C729CE288EF9070018F98E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		18C729CF288EF9110018F98E /* Presenter */ = {
@@ -472,8 +442,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C729BB288EEC4D0018F98E /* visionAppUITestsLaunchTests.swift in Sources */,
-				18C729B9288EEC4D0018F98E /* visionAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

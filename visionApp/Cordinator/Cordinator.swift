@@ -1,5 +1,5 @@
 //
-//  Cordinator.swift
+//  Coordinator.swift
 //  visionApp
 //
 //  Created by Kseniya Zharikova on 25/7/22.
@@ -8,20 +8,20 @@
 import Foundation
 import UIKit
 
-protocol CordinatorMain {
+protocol CoordinatorMain {
     var navigationController: UINavigationController? { get set }
     var builder: BuilderProtocol? { get set }
     var results: ResultsModel? { get set }
 }
 
-protocol CordinatorProtocol : CordinatorMain {
+protocol CoordinatorProtocol : CoordinatorMain {
     func initialViewController()
     func openPassportViewController()
     func openResultViewController()
     func popToRoot()
 }
 
-final class Cordinator: CordinatorProtocol {
+final class Coordinator: CoordinatorProtocol {
     
     var navigationController: UINavigationController?
     var builder: BuilderProtocol?
@@ -35,19 +35,19 @@ final class Cordinator: CordinatorProtocol {
     
     func initialViewController() {
         guard let navigationController = navigationController else { return }
-        guard let predictionViewController  = builder?.createSelfieModule(cordinator: self) else { return }
+        guard let predictionViewController  = builder?.createSelfieModule(coordinator: self) else { return }
         navigationController.viewControllers = [predictionViewController]
     }
     
     func openPassportViewController() {
         guard let navigationController = navigationController else { return }
-        guard let passportViewController = builder?.createPassportModule(cordinator: self) else { return }
+        guard let passportViewController = builder?.createPassportModule(coordinator: self) else { return }
         navigationController.pushViewController(passportViewController, animated: true)
     }
     
     func openResultViewController() {
         guard let navigationController = navigationController else { return }
-        guard let resultViewController = builder?.createResultModule(cordinator: self) else { return }
+        guard let resultViewController = builder?.createResultModule(coordinator: self) else { return }
         navigationController.pushViewController(resultViewController, animated: true)
     }
     

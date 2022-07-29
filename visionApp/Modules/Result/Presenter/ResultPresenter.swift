@@ -11,7 +11,7 @@ import UIKit
 protocol ResultViewProtocol: AnyObject {}
 
 protocol ResultPresenterProtocol: AnyObject {
-    init(view:  ResultViewProtocol, cordinator: CordinatorProtocol)
+    init(view:  ResultViewProtocol, coordinator: CoordinatorProtocol)
     var model: ResultsModel? {get set}
     func tryAgain()
 }
@@ -19,17 +19,16 @@ protocol ResultPresenterProtocol: AnyObject {
 final class ResultPresenter: ResultPresenterProtocol {
   
     weak var view:  ResultViewProtocol?
-    var cordinator: CordinatorProtocol?
+    var coordinator: CoordinatorProtocol?
     var model: ResultsModel?
     
-    required init(view: ResultViewProtocol,cordinator: CordinatorProtocol) {
+    required init(view: ResultViewProtocol,coordinator: CoordinatorProtocol) {
         self.view = view
-        self.cordinator = cordinator
-        self.model = cordinator.results
+        self.coordinator = coordinator
+        self.model = coordinator.results
     }
     
     func tryAgain() {
-        cordinator?.popToRoot()
+        coordinator?.popToRoot()
     }
-  
 }
