@@ -1,5 +1,5 @@
 //
-//  PassportPresnter.swift
+//  PassportPresenterImpl.swift
 //  visionApp
 //
 //  Created by Kseniya Zharikova on 27/7/22.
@@ -8,19 +8,19 @@
 import Foundation
 import UIKit
 
-protocol PassportViewProtocol: AnyObject {}
+protocol PassportView: AnyObject {}
 
-protocol PassportPresenterProtocol: AnyObject {
-    init(view: PassportViewProtocol, detector: Detector, coordinator: CoordinatorProtocol)
+protocol PassportPresenter: AnyObject {
+    init(view: PassportView, detector: Detector, coordinator: Coordinator)
     func takedPhotoAction(image: UIImage?)
 }
 
-final class PassportPresenter: PassportPresenterProtocol {
-    weak var view: PassportViewProtocol?
-    var coordinator: CoordinatorProtocol?
-    let detector: Detector!
+final class PassportPresenterImpl: PassportPresenter {
+    let view: PassportView
+    var coordinator: Coordinator?
+    let detector: Detector
     
-    required init(view: PassportViewProtocol, detector: Detector, coordinator: CoordinatorProtocol) {
+    required init(view: PassportView, detector: Detector, coordinator: Coordinator) {
         self.view = view
         self.coordinator = coordinator
         self.detector = detector
@@ -30,7 +30,7 @@ final class PassportPresenter: PassportPresenterProtocol {
         guard let image = image else { return }
         
         detector.detectText(image: image, { [weak self] result in
-            guard let `self` = self else { return }
+            guard let self = self else { return }
             self.coordinator?.results?.textRecognitionResult = result
         })
         

@@ -9,7 +9,7 @@ import UIKit
 
 final class SelfieViewController: UIViewController {
     
-    var presenter: SelfiePresenterProtocol!
+    var presenter: SelfiePresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,6 @@ final class SelfieViewController: UIViewController {
     func setUpUI() {
         navigationItem.title = "Step 1"
     }
-    
     
     // MARK: - Actions
     
@@ -35,4 +34,4 @@ extension SelfieViewController: PickerControllerDelegate {
     }
 }
 
-extension SelfieViewController: SelfieViewProtocol {}
+extension SelfieViewController: SelfieView {}

@@ -11,11 +11,11 @@
 		1869D9B528912A1200897414 /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9B428912A1200897414 /* ResultsModel.swift */; };
 		1869D9BE28912E0C00897414 /* PassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9BD28912E0C00897414 /* PassportViewController.swift */; };
 		1869D9C228912EBF00897414 /* PassportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1869D9C128912EBF00897414 /* PassportViewController.xib */; };
-		1869D9C4289131B200897414 /* PassportPresnter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9C3289131B200897414 /* PassportPresnter.swift */; };
+		1869D9C4289131B200897414 /* PassportPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9C3289131B200897414 /* PassportPresenterImpl.swift */; };
 		1869D9C728913A1D00897414 /* Ext+ UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9C628913A1D00897414 /* Ext+ UIViewController.swift */; };
 		1869D9CB28913B6E00897414 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9CA28913B6E00897414 /* ResultViewController.swift */; };
 		1869D9CD28913B7B00897414 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1869D9CC28913B7B00897414 /* ResultViewController.xib */; };
-		1869D9CF28913BBF00897414 /* ResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9CE28913BBF00897414 /* ResultPresenter.swift */; };
+		1869D9CF28913BBF00897414 /* ResultPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1869D9CE28913BBF00897414 /* ResultPresenterImpl.swift */; };
 		18C72998288EEC4B0018F98E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C72997288EEC4B0018F98E /* AppDelegate.swift */; };
 		18C7299A288EEC4B0018F98E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C72999288EEC4B0018F98E /* SceneDelegate.swift */; };
 		18C7299C288EEC4B0018F98E /* SelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7299B288EEC4B0018F98E /* SelfieViewController.swift */; };
@@ -23,10 +23,12 @@
 		18C729A1288EEC4D0018F98E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C729A0288EEC4D0018F98E /* Assets.xcassets */; };
 		18C729A4288EEC4D0018F98E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C729A2288EEC4D0018F98E /* LaunchScreen.storyboard */; };
 		18C729AF288EEC4D0018F98E /* visionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729AE288EEC4D0018F98E /* visionAppTests.swift */; };
-		18C729C8288EF8340018F98E /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729C7288EF8340018F98E /* ModuleBuilder.swift */; };
-		18C729CA288EF86C0018F98E /* Cordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729C9288EF86C0018F98E /* Cordinator.swift */; };
-		18C729D3288EF9B20018F98E /* SelfiePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729D2288EF9B20018F98E /* SelfiePresenter.swift */; };
+		18C729C8288EF8340018F98E /* BuilderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729C7288EF8340018F98E /* BuilderImpl.swift */; };
+		18C729CA288EF86C0018F98E /* CoordinatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729C9288EF86C0018F98E /* CoordinatorImpl.swift */; };
+		18C729D3288EF9B20018F98E /* SelfiePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C729D2288EF9B20018F98E /* SelfiePresenterImpl.swift */; };
 		18C729D7288F02160018F98E /* SelfieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C729D6288F02160018F98E /* SelfieViewController.xib */; };
+		18D30170289806F7008CA01B /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3016F289806F7008CA01B /* CoordinatorFactory.swift */; };
+		18D3017228981BEF008CA01B /* ModuleBuilderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3017128981BEF008CA01B /* ModuleBuilderFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +53,11 @@
 		1869D9B428912A1200897414 /* ResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsModel.swift; sourceTree = "<group>"; };
 		1869D9BD28912E0C00897414 /* PassportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportViewController.swift; sourceTree = "<group>"; };
 		1869D9C128912EBF00897414 /* PassportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassportViewController.xib; sourceTree = "<group>"; };
-		1869D9C3289131B200897414 /* PassportPresnter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportPresnter.swift; sourceTree = "<group>"; };
+		1869D9C3289131B200897414 /* PassportPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportPresenterImpl.swift; sourceTree = "<group>"; };
 		1869D9C628913A1D00897414 /* Ext+ UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+ UIViewController.swift"; sourceTree = "<group>"; };
 		1869D9CA28913B6E00897414 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		1869D9CC28913B7B00897414 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
-		1869D9CE28913BBF00897414 /* ResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresenter.swift; sourceTree = "<group>"; };
+		1869D9CE28913BBF00897414 /* ResultPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresenterImpl.swift; sourceTree = "<group>"; };
 		18C72994288EEC4A0018F98E /* visionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C72997288EEC4B0018F98E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C72999288EEC4B0018F98E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,10 +69,12 @@
 		18C729AA288EEC4D0018F98E /* visionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = visionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C729AE288EEC4D0018F98E /* visionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionAppTests.swift; sourceTree = "<group>"; };
 		18C729B4288EEC4D0018F98E /* visionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = visionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		18C729C7288EF8340018F98E /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
-		18C729C9288EF86C0018F98E /* Cordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinator.swift; sourceTree = "<group>"; };
-		18C729D2288EF9B20018F98E /* SelfiePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiePresenter.swift; sourceTree = "<group>"; };
+		18C729C7288EF8340018F98E /* BuilderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderImpl.swift; sourceTree = "<group>"; };
+		18C729C9288EF86C0018F98E /* CoordinatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorImpl.swift; sourceTree = "<group>"; };
+		18C729D2288EF9B20018F98E /* SelfiePresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiePresenterImpl.swift; sourceTree = "<group>"; };
 		18C729D6288F02160018F98E /* SelfieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfieViewController.xib; sourceTree = "<group>"; };
+		18D3016F289806F7008CA01B /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		18D3017128981BEF008CA01B /* ModuleBuilderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,8 @@
 		1869D9AE2891151D00897414 /* Cordinator */ = {
 			isa = PBXGroup;
 			children = (
-				18C729C9288EF86C0018F98E /* Cordinator.swift */,
+				18C729C9288EF86C0018F98E /* CoordinatorImpl.swift */,
+				18D3016F289806F7008CA01B /* CoordinatorFactory.swift */,
 			);
 			path = Cordinator;
 			sourceTree = "<group>";
@@ -118,7 +123,8 @@
 		1869D9B02891154800897414 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				18C729C7288EF8340018F98E /* ModuleBuilder.swift */,
+				18C729C7288EF8340018F98E /* BuilderImpl.swift */,
+				18D3017128981BEF008CA01B /* ModuleBuilderFactory.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -161,7 +167,7 @@
 		1869D9B928912DAC00897414 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				1869D9C3289131B200897414 /* PassportPresnter.swift */,
+				1869D9C3289131B200897414 /* PassportPresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -186,7 +192,7 @@
 		1869D9C828913B2600897414 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				1869D9CE28913BBF00897414 /* ResultPresenter.swift */,
+				1869D9CE28913BBF00897414 /* ResultPresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -275,7 +281,7 @@
 		18C729CF288EF9110018F98E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				18C729D2288EF9B20018F98E /* SelfiePresenter.swift */,
+				18C729D2288EF9B20018F98E /* SelfiePresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -414,18 +420,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1869D9CF28913BBF00897414 /* ResultPresenter.swift in Sources */,
+				1869D9CF28913BBF00897414 /* ResultPresenterImpl.swift in Sources */,
 				1869D9BE28912E0C00897414 /* PassportViewController.swift in Sources */,
 				1869D9B528912A1200897414 /* ResultsModel.swift in Sources */,
+				18D3017228981BEF008CA01B /* ModuleBuilderFactory.swift in Sources */,
 				18C7299C288EEC4B0018F98E /* SelfieViewController.swift in Sources */,
 				1869D9C728913A1D00897414 /* Ext+ UIViewController.swift in Sources */,
 				1869D9B3289116D300897414 /* Detector.swift in Sources */,
 				18C72998288EEC4B0018F98E /* AppDelegate.swift in Sources */,
-				18C729D3288EF9B20018F98E /* SelfiePresenter.swift in Sources */,
-				1869D9C4289131B200897414 /* PassportPresnter.swift in Sources */,
-				18C729CA288EF86C0018F98E /* Cordinator.swift in Sources */,
+				18C729D3288EF9B20018F98E /* SelfiePresenterImpl.swift in Sources */,
+				1869D9C4289131B200897414 /* PassportPresenterImpl.swift in Sources */,
+				18D30170289806F7008CA01B /* CoordinatorFactory.swift in Sources */,
+				18C729CA288EF86C0018F98E /* CoordinatorImpl.swift in Sources */,
 				18C7299A288EEC4B0018F98E /* SceneDelegate.swift in Sources */,
-				18C729C8288EF8340018F98E /* ModuleBuilder.swift in Sources */,
+				18C729C8288EF8340018F98E /* BuilderImpl.swift in Sources */,
 				1869D9CB28913B6E00897414 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

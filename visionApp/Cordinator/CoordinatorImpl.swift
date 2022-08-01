@@ -1,5 +1,5 @@
 //
-//  Coordinator.swift
+//  CoordinatorImpl.swift
 //  visionApp
 //
 //  Created by Kseniya Zharikova on 25/7/22.
@@ -8,26 +8,24 @@
 import Foundation
 import UIKit
 
-protocol CoordinatorMain {
-    var navigationController: UINavigationController? { get set }
-    var builder: BuilderProtocol? { get set }
+protocol Coordinator {
+    var navigationController: UINavigationController? { get }
+    var builder: Builder? { get set }
     var results: ResultsModel? { get set }
-}
-
-protocol CoordinatorProtocol : CoordinatorMain {
+    
     func initialViewController()
     func openPassportViewController()
     func openResultViewController()
     func popToRoot()
 }
 
-final class Coordinator: CoordinatorProtocol {
+final class CoordinatorImpl: Coordinator {
     
     var navigationController: UINavigationController?
-    var builder: BuilderProtocol?
+    var builder: Builder?
     var results: ResultsModel?
     
-    init(navigationController: UINavigationController, builder: BuilderProtocol, results: ResultsModel) {
+    init(navigationController: UINavigationController, builder: Builder, results: ResultsModel) {
         self.navigationController = navigationController
         self.builder = builder
         self.results = results

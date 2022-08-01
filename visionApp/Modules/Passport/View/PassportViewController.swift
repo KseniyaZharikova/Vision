@@ -10,7 +10,7 @@ import UIKit
 
 final class PassportViewController: UIViewController {
     
-    var presenter: PassportPresenterProtocol!
+    var presenter: PassportPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,4 +35,4 @@ extension PassportViewController: PickerControllerDelegate {
     }
 }
 
-extension PassportViewController: PassportViewProtocol {}
+extension PassportViewController: PassportView {}

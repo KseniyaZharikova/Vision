@@ -1,5 +1,5 @@
 //
-//  SelfiePresenter.swift
+//  SelfiePresenterImpl.swift
 //  visionApp
 //
 //  Created by Kseniya Zharikova on 25/7/22.
@@ -8,20 +8,20 @@
 import Foundation
 import UIKit
 
-protocol SelfieViewProtocol: AnyObject {}
+protocol SelfieView: AnyObject {}
 
-protocol SelfiePresenterProtocol: AnyObject {
-    init(view:SelfieViewProtocol, detector: Detector, coordinator: CoordinatorProtocol)
+protocol SelfiePresenter: AnyObject {
+    init(view:SelfieView, detector: Detector, coordinator: Coordinator)
     func takedPhotoAction(image: UIImage?)
 }
 
-final class SelfiePresenter: SelfiePresenterProtocol {
+final class SelfiePresenterImpl: SelfiePresenter {
    
-    weak var view: SelfieViewProtocol?
-    var coordinator: CoordinatorProtocol?
-    let detector: Detector!
+    let view: SelfieView 
+    var coordinator: Coordinator?
+    let detector: Detector
     
-    required init(view: SelfieViewProtocol, detector: Detector, coordinator: CoordinatorProtocol) {
+    required init(view: SelfieView, detector: Detector, coordinator: Coordinator) {
         self.view = view
         self.coordinator = coordinator
         self.detector = detector
@@ -31,7 +31,7 @@ final class SelfiePresenter: SelfiePresenterProtocol {
         guard let image = image else { return }
         
         detector.detectFace(image: image, { [weak self] result in
-            guard let `self` = self else { return }
+            guard let self = self else { return }
             self.coordinator?.results?.faceRecognitionResult = result
         })
         

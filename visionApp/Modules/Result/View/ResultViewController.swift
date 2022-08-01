@@ -16,7 +16,7 @@ final class ResultViewController: UIViewController {
     @IBOutlet weak var documentStatusTitle: UILabel!
     @IBOutlet weak var documentErrorTitle: UILabel!
     
-    var presenter: ResultPresenterProtocol!
+    var presenter: ResultPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,7 @@ final class ResultViewController: UIViewController {
         guard let model = presenter.model else { return }
         
         switch model.faceRecognitionResult {
-        case .success(_):
+        case .success:
             faceStatusTitle.text = "Success"
             faceStatusTitle.textColor = .green
             faceErrorTitle.isHidden = true
@@ -46,7 +46,7 @@ final class ResultViewController: UIViewController {
         }
         
         switch model.textRecognitionResult {
-        case .success(_):
+        case .success:
             documentStatusTitle.text = "Success"
             documentStatusTitle.textColor = .green
             documentErrorTitle.isHidden = true
@@ -61,9 +61,11 @@ final class ResultViewController: UIViewController {
         
     }
     
+    // MARK: - Actions
+    
     @IBAction func tryAgainAction(_ sender: Any) {
         presenter.tryAgain()
     }
 }
 
-extension ResultViewController: ResultViewProtocol {}
+extension ResultViewController: ResultView {}

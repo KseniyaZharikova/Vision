@@ -15,13 +15,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let bulder = ModuleBuilder()
+        let bulder = VisionModuleBuilder().createModuleBuilder()
         let results = ResultsModel()
         let navigationViewController = UINavigationController()
         window?.rootViewController = navigationViewController
-        let coordinator = Coordinator(navigationController: navigationViewController, builder: bulder, results: results)
+        let coordinator = VisionCoordinator().createCoordinator(navigationController: navigationViewController, builder: bulder, results: results)
         coordinator.initialViewController()
         window?.makeKeyAndVisible()
     }
 }
-
