@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PassportViewController" customModule="visionApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="tOV-Wx-d31" id="eps-Fr-9tN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tOV-Wx-d31">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3h-a9-esD">
+                    <rect key="frame" x="32" y="774" width="350" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="APi-ki-zC7"/>
+                    </constraints>
+                    <buttonConfiguration key="configuration" style="filled" title="Take a photo">
+                        <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="takePhotoAction:" destination="-1" eventType="touchUpInside" id="857-YQ-LTC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo3-bL-0zR">
+                    <rect key="frame" x="24" y="366.5" width="366" height="43"/>
+                    <string key="text">To finish with verification we need a
+photo of your document</string>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mS0-u2-POo">
+                    <rect key="frame" x="24" y="427.5" width="366" height="41"/>
+                    <string key="text">Please take a photo of the front side of your
+ID-card. Make sure it is clearly visible.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ve0-Cm-UUE"/>
+            <color key="backgroundColor" red="0.0" green="0.40086580849999998" blue="0.61647790670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Y3h-a9-esD" firstAttribute="leading" secondItem="ve0-Cm-UUE" secondAttribute="leading" constant="32" id="5PL-RD-Qke"/>
+                <constraint firstItem="mS0-u2-POo" firstAttribute="leading" secondItem="ve0-Cm-UUE" secondAttribute="leading" constant="24" id="CEc-Zm-UPY"/>
+                <constraint firstItem="ve0-Cm-UUE" firstAttribute="bottom" secondItem="Y3h-a9-esD" secondAttribute="bottom" constant="32" id="F0J-r7-AMJ"/>
+                <constraint firstItem="ve0-Cm-UUE" firstAttribute="trailing" secondItem="Y3h-a9-esD" secondAttribute="trailing" constant="32" id="Pyc-Rm-Glf"/>
+                <constraint firstAttribute="trailing" secondItem="Xo3-bL-0zR" secondAttribute="trailing" constant="24" id="WTh-EM-Dgy"/>
+                <constraint firstItem="mS0-u2-POo" firstAttribute="top" secondItem="Xo3-bL-0zR" secondAttribute="bottom" constant="18" id="Wvd-Hb-caj"/>
+                <constraint firstItem="Xo3-bL-0zR" firstAttribute="centerX" secondItem="tOV-Wx-d31" secondAttribute="centerX" id="X5c-9b-OiJ"/>
+                <constraint firstItem="Xo3-bL-0zR" firstAttribute="leading" secondItem="ve0-Cm-UUE" secondAttribute="leading" constant="24" id="nAg-n3-yHI"/>
+                <constraint firstItem="ve0-Cm-UUE" firstAttribute="trailing" secondItem="mS0-u2-POo" secondAttribute="trailing" constant="24" id="ocU-2W-rF2"/>
+                <constraint firstItem="mS0-u2-POo" firstAttribute="centerY" secondItem="tOV-Wx-d31" secondAttribute="centerY" id="txB-Vq-Wh1"/>
+            </constraints>
+            <point key="canvasLocation" x="529" y="-565"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

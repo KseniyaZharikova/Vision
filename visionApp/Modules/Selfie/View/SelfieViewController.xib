@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelfieViewController" customModule="visionApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="cCT-l3-5Oo" id="Jd9-FO-vZr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cCT-l3-5Oo">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="go1-Xm-ZNR">
+                    <rect key="frame" x="32" y="774" width="350" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="CQ5-WT-DQB"/>
+                    </constraints>
+                    <buttonConfiguration key="configuration" style="filled" title="Take a photo">
+                        <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="takePhotoAction:" destination="-1" eventType="touchUpInside" id="Lye-8m-pxH"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOa-Aa-3x2">
+                    <rect key="frame" x="24" y="356.5" width="366" height="43"/>
+                    <string key="text">To progress with verification we need
+your selfie</string>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ma-Eh-cpv">
+                    <rect key="frame" x="24" y="417.5" width="366" height="61"/>
+                    <string key="text">Please make sure that your face is clearly
+visible and there are no other faces on the
+photo.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="RBX-CN-c8c"/>
+            <color key="backgroundColor" red="0.0" green="0.40086580849999998" blue="0.61647790670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="nOa-Aa-3x2" firstAttribute="centerX" secondItem="cCT-l3-5Oo" secondAttribute="centerX" id="3Rr-V8-Iky"/>
+                <constraint firstItem="3Ma-Eh-cpv" firstAttribute="centerY" secondItem="cCT-l3-5Oo" secondAttribute="centerY" id="Iv6-kW-TtX"/>
+                <constraint firstItem="3Ma-Eh-cpv" firstAttribute="leading" secondItem="RBX-CN-c8c" secondAttribute="leading" constant="24" id="LAm-FA-iep"/>
+                <constraint firstItem="RBX-CN-c8c" firstAttribute="trailing" secondItem="3Ma-Eh-cpv" secondAttribute="trailing" constant="24" id="VRw-O8-uST"/>
+                <constraint firstItem="3Ma-Eh-cpv" firstAttribute="top" secondItem="nOa-Aa-3x2" secondAttribute="bottom" constant="18" id="We0-2N-Bw7"/>
+                <constraint firstItem="nOa-Aa-3x2" firstAttribute="leading" secondItem="RBX-CN-c8c" secondAttribute="leading" constant="24" id="bxh-Sq-B9d"/>
+                <constraint firstItem="RBX-CN-c8c" firstAttribute="bottom" secondItem="go1-Xm-ZNR" secondAttribute="bottom" constant="32" id="e5h-Ks-QaB"/>
+                <constraint firstAttribute="trailing" secondItem="nOa-Aa-3x2" secondAttribute="trailing" constant="24" id="ntg-ma-Zb5"/>
+                <constraint firstItem="go1-Xm-ZNR" firstAttribute="leading" secondItem="RBX-CN-c8c" secondAttribute="leading" constant="32" id="swi-pa-u8N"/>
+                <constraint firstItem="RBX-CN-c8c" firstAttribute="trailing" secondItem="go1-Xm-ZNR" secondAttribute="trailing" constant="32" id="zWa-oc-vh9"/>
+            </constraints>
+            <point key="canvasLocation" x="529" y="-565"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
